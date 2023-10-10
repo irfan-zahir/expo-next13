@@ -3,6 +3,8 @@
 
 This is a template repository for me to create full stack app using NextJS13 and Expo. This repo is the aftermath of bunch of failures tweaking T3-Turbo stack.
 
+This repo uses firebase and firebase admin for authentication. Make sure to create firebase project.
+
 
 
 
