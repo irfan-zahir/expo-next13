@@ -1,0 +1,14 @@
+{
+  "name": "wallpaper",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "typescript": "^5.2.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "private": true
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@acme/api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@acme/db": "*",
+    "@trpc/client": "^10.37.1",
+    "@trpc/server": "^10.37.1",
+    "firebase-admin": "^11.10.1",
+    "superjson": "^1.13.1",
+    "zod": "^3.22.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@types/validator": "^13.11.1"
+  }
+}

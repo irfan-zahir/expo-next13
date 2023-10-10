@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator json {
+  provider = "prisma-json-types-generator"
+}
+
+datasource db {
+  provider = "postgresql"
+  // DATABASE_URL value is declared in apps/nextjs
+  // Refer to apps/nextjs/.env.example
+  url      = env("DATABASE_URL")
+}
+
+model User extends Base {
+  id String @id @unique @default(cuid())
+  uid String? @unique
+  phone String @unique
+  fullName String
+}
+
+enum RecordStatus {
+  ACTIVE
+  DISABLED
+  INACTIVE
+}
+
+abstract model Base {
+  createdBy String?
+  createdAt DateTime @default(now())
+  modBy String?
+  modAt DateTime @updatedAt()
+  recordStatus RecordStatus? @default(ACTIVE)
+}

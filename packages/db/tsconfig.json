@@ -1,0 +1,8 @@
+{
+    "extends": "../../tsconfig.json",
+    "compileOnSave": true,
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": ["."]
+}
