@@ -19,4 +19,6 @@ This repo uses firebase and firebase admin for authentication. Make sure to crea
 
 ## Features
 
-- Zenstack enable models in `schema.prisma` to extend `BaseModel`. More info on [Zenstack docs](https://zenstack.dev/docs/intro)
+- **Zenstack:** enable models in `schema.prisma` to extend `BaseModel`. More info on [Zenstack docs](https://zenstack.dev/docs/intro)
+
+- **prisma-json-types-generator:** enable PostgreSQL's Json to have types. More info on [prisma-json-types-generator docs](https://github.com/arthurfiorette/prisma-json-types-generator)
